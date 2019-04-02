@@ -1,0 +1,13 @@
+
+.candidates-title {
+   margin-top: 2rem;
+}
+
+.candidates-container {
+   margin-top: 2rem;
+}
+
+.candidates-icon {
+   font-size: 1.5rem; 
+   cursor: pointer;
+}

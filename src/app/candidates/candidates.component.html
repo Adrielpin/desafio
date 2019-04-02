@@ -1,0 +1,38 @@
+<div class="candidates-container">
+   <div class="container">
+      <table class="table table-striped p-3 mb-5 bg-white rounde">
+         <thead>
+           <tr>
+             <th scope="col">Nome Completo</th>
+             <th scope="col">E-mail</th>
+             <th scope="col">Telefone</th>
+             <th scope="col">Funcionalidade</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr *ngFor="let candidate of candidates">
+             <th scope="row">{{ candidate.name }}</th>
+             <td>{{ candidate.email }}</td>
+             <td>{{ candidate.phone }}</td>
+             <td *ngIf="loggedUser | async as u">
+               <i class="fa fa-edit mr-2 candidates-icon" (click)="updateCandidate(candidate.id)"></i>
+               <i class="fa fa-trash ml-2 candidates-icon" *ngIf="u.isLogged" (click)="deleteCandidate(candidate.id)"></i>
+             </td>
+           </tr>
+         </tbody>
+       </table>
+      <div class="d-flex justify-content-center" *ngIf="isLoading">
+         <div class="row">
+            <div class="spinner-grow text-success" role="status">
+               <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-success" role="status">
+               <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-success" role="status">
+               <span class="sr-only">Loading...</span>
+            </div>
+         </div>
+      </div> 
+   </div>
+</div>
