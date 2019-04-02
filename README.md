@@ -17,7 +17,7 @@ InstalaÃ§Ã£o
 Execute na ordem os comandos:
 
 ```bash
-$ git clone https://github.com/Adrielpin/desafio
+$ git clone https://github.com/Adrielpin/desafio.git
 $ cd projeto
 $ npm install
 $ ng serve
