@@ -11,23 +11,23 @@ Requerimentos
   * Npm
   * Angular
 
-InstalaÃ§Ã£o
+Instalação
 ----------
 
 Execute na ordem os comandos:
 
 ```bash
 $ git clone https://github.com/Adrielpin/desafio.git
-$ cd projeto
+$ cd desafio
 $ npm install
 $ ng serve
 ```
 
-UtilizaÃ§Ã£o
+Utilização
 ----------
 
-NÃ£o Ã© necessÃ¡rio configurar qualquer ambiente para rodar esta aplicaÃ§Ã£o. Apenas 
-execute este comando para rodar o servidor incluso e acesse o seguinte endereÃ§o
+Não é necessário configurar qualquer ambiente para rodar esta aplicação. Apenas 
+execute este comando para rodar o servidor incluso e acesse o seguinte endereço
 em seu navegador web <http://localhost:4200>:
 
 ```bash
